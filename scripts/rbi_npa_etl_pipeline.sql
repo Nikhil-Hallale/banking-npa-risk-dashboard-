@@ -56,6 +56,7 @@ standardized_data AS (
               OR TRIM(LOWER(raw_banks)) LIKE 'oriental bank%' OR TRIM(LOWER(raw_banks)) LIKE 'syndicate bank%'
               OR TRIM(LOWER(raw_banks)) LIKE 'vijaya bank%' OR TRIM(LOWER(raw_banks)) LIKE 'allahabad bank%'
               OR TRIM(LOWER(raw_banks)) LIKE 'andhra bank%' OR TRIM(LOWER(raw_banks)) LIKE 'bharatiya mahila%'
+              OR TRIM(LOWER(raw_banks)) LIKE '%maharashtra%' OR TRIM(LOWER(raw_banks)) LIKE '%overseas bank%' 
             THEN 'PUBLIC SECTOR BANKS'
 
             -- Map Private Sector Banks
